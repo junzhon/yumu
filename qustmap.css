@@ -1,0 +1,56 @@
+html{height:100%}
+.BMap_cpyCtrl {
+    display:none;
+}
+.anchorBL{
+    display:none;
+}
+
+body{
+    height: 100%;
+    margin: 0px;
+    padding: 0px;
+    background: #55cca8;
+    background-attachment: fixed;
+    background-size: cover;
+	overflow-x: hidden;
+	overflow-y: hidden;
+}
+#container{
+    position: relative;
+    height: 90%;
+    margin: 10px 10px 10px 400px;
+    border: 2px solid rgb(20, 69, 202);
+}
+.custom-select {
+    width: 9%;
+    border: 2px solid rgb(20, 69, 202);
+}
+.control {
+    position: relative;
+    left: 4%;
+    bottom: 60%;
+}
+.control #button {
+    position: relative;
+    left: 6%;
+    border: 2px solid rgb(175, 202, 20);
+}
+.input-group-prepend {
+    float: left;
+}
+.font-italic {
+    position: absolute;
+    left: 4%;
+    bottom: 80%;
+}
+#showdis {
+    position: absolute;
+    bottom: 30%;
+    left: 4%;
+}
+#warninginfo {
+    position: absolute;
+    bottom: 40%;
+    left: 4%;
+}

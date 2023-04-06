@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="initial-scale=1.0, user-scalable=no, width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="stylesheet" href="qustmap.css">
+    <title>最短路径</title>
+    <script type="text/javascript" src="http://api.map.baidu.com/api?v=2.0&ak=SLoCgVtZLzbc3Gf4vGll8wejFUrSs2mI"></script>
+    <script src="http://mapv.baidu.com/build/mapv.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="assets/waifu.css"/>
+
+</head>
+<body>
+    
+    <div id="container"></div>
+    <div class="control">
+        <div class="input-group-prepend">
+            <label class="input-group-text" for="startnode">选择起点：</label>
+        </div>
+        <select id="startnode" class="custom-select"></select></br>
+        <div class="input-group-prepend">
+            <label class="input-group-text" for="endnode">选择终点：</label>
+        </div>
+        <select id="endnode" class="custom-select"></select></br>
+        <input type="button" name="click" value="获取最短路径" id="button" class="btn btn-outline-dark">
+    </div>
+    <div id="showdis" class="alert alert-primary" role="alert"></div>
+    <div class="font-italic">数据结构-最短路径作业（雨母地图）</div>
+    <button type="button" class="btn btn-outline-warning" id="warninginfo">提示</button>
+    <script type="text/javascript" src="qustmap.js"></script>
+    <div class="waifu">
+        <div class="waifu-tips"></div>
+        <canvas id="live2d" width="280" height="250" class="live2d"></canvas>
+        <div class="waifu-tool">
+            <span class="fui-home"></span>
+            <span class="fui-chat"></span>
+            <span class="fui-eye"></span>
+            <span class="fui-user"></span>
+            <span class="fui-photo"></span>
+            <span class="fui-info-circle"></span>
+            <span class="fui-cross"></span>
+        </div>
+    </div>
+    <script src="assets/waifu-tips.js"></script>
+    <script src="assets/live2d.js"></script>
+    <script type="text/javascript">initModel("assets/")</script>
+    <script type="text/javascript">//垃圾百度端口要自动刷新一次才能读取
+//	window.onload=function(){
+//		var url=document.location.herf;
+//		if(url.indexOf("yess=")==-1){
+//			var t=new Date();
+//			window.location.herf=url+"?yes="+t.getTime();
+//		}
+//	}
+	$(document).ready(function () {
+
+     if(location.href.indexOf("#reloaded")==-1){
+        location.href=location.href+"#reloaded";
+        location.reload();
+    }
+ }）
+
+   </script>
+
+</body>
+
+</html>
